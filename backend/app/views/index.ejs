@@ -20,24 +20,24 @@
     }  
 </style>
 <body>
-    <div class="container mt-5 w-50">
+    <div class="container w-50">
         <div class="card Card">
             <div class="card-header Título">
-                <h3>IntrAmarelux - Busca Cliente</h3>           
+                <h3>IntrAmarelux - Busca de Clientes</h3>           
             </div>
     
             <div class="card-body">
-                <form class="form-inline justify-content-center" action="/email" method="POST">
+                <form class="form-inline justify-content-center" action="/clientes/email" method="POST">
                     <div class="input-group mb-3">
                         <label class="mr-2" for="email">Email: </label>
-                        <input type="email" class="form-control mr-3" id="email" placeholder="email@email.com"/>
+                        <input type="text" class="form-control mr-3" name='email' id='email' placeholder="email@email.com"/>
                         <button type="submit" class="btn btn-info">Pesquisar por Email</button>
                     </div>
                 </form>
-                <form class="form-inline justify-content-center" action="/cpf" method="POST">
+                <form class="form-inline justify-content-center" action="/clientes/cpf" method="POST">
                     <div class="input-group">
                         <label class="mr-2" for="cpf">CPF: </label>
-                        <input type="number" class="form-control mr-3" id="cpf" placeholder="CPF"/>
+                        <input type="text" class="form-control mr-3" name='cpf' id='cpf' placeholder="CPF"/>
                         <button type="submit" class="btn btn-info">Pesquisar por CPF</button>
                     </div>
                 </form>

@@ -23,11 +23,11 @@ module.exports = function (){
     }
 
     this.getClienteCPF = function (cpf,connection, callback){
-        connection.query("SELECT * FROM clientes WHERE id = "+cpf, callback);
+        connection.query('SELECT * FROM clientes WHERE?',cpf,callback);
     }
 
     this.getClienteEmail = function (email,connection, callback){
-        connection.query("SELECT * FROM clientes WHERE id = "+email, callback);
+        connection.query(`SELECT * FROM clientes WHERE?`, email,callback);
     }
 
     return this;
